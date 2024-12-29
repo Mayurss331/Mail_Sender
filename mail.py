@@ -758,7 +758,7 @@ def send_technical_mail(to,sub,link,date,time,name="Candidate"):
                 <h2 style="text-align: center;">Congratulations, {name}!</h2>
                 <p class="content">
                     Dear {name},<br><br>
-                    Thank you for participating in Elementis SoftTech’s internship selection process. We value your enthusiasm and interest.<br><br>
+                    Thank you for participating in Elementis SoftTech’s selection process. We value your enthusiasm and interest.<br><br>
                     To maintain a transparent and fair process, we charge a nominal fee for the technical round. This covers costs for using Coderbyte, a premium assessment platform that ensures high standards in evaluating technical skills.<br><br>
                     Passing this fee to candidates helps us manage resources responsibly and avoid unnecessary expenses for no-shows after registration.
                 </p>
