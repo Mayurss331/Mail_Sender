@@ -8,6 +8,8 @@ def send_message(btn):
     date = date_txt.get().strip()
     time = time_txt.get().strip()
     pc.Loader(btn,path,sub,link,date,time)
+    print("Done sending mails")
+
 
 
 
@@ -24,7 +26,7 @@ root.grid_columnconfigure(0, weight=1)
 root.grid_columnconfigure(2, weight=1)
 
 # Add a stylish title label
-title_label = tk.Label(root, text="Welcome to the Enhanced GUI", font=("Helvetica", 16, "bold"), fg="#003366", bg="#eaf7fc")
+title_label = tk.Label(root, text="Welcome to Elementis SoftTech", font=("Helvetica", 16, "bold"), fg="#003366", bg="#eaf7fc")
 title_label.grid(row=0, column=0, columnspan=3, pady=10)
 
 # Add Text areas and their labels
@@ -63,9 +65,15 @@ GD_1_btn.grid(row=7, column=1, padx=10, pady=15)
 GD_2_btn = tk.Button(root, text="GD-2 mail", font=("Arial", 12, "bold"), bg="yellow", activebackground="#3399ff", fg="#000000", command=lambda: send_message(3), relief="raised", bd=3)
 GD_2_btn.grid(row=7, column=2, padx=10, pady=15)
 
-# Add a label for displaying messages
-greeting_label = tk.Label(root, text="", font=("Arial", 12, "italic"), fg="#003366", bg="#eaf7fc")
-greeting_label.grid(row=8, column=0, columnspan=3, pady=20)
+feedback_form = tk.Button(root, text="Feedback mail", font=("Arial", 12, "bold"), bg="yellow", activebackground="#3399ff", fg="#000000", command=lambda: send_message(4), relief="raised", bd=3)
+feedback_form.grid(row=8, column=0, padx=10, pady=15)
+
+technical_btn = tk.Button(root, text="Technical mail", font=("Arial", 12, "bold"), bg="yellow", activebackground="#3399ff", fg="#000000", command=lambda: send_message(5), relief="raised", bd=3)
+technical_btn.grid(row=8, column=1, padx=10, pady=15)
+
+
+
+
 
 # Run the main event loop
 root.mainloop()

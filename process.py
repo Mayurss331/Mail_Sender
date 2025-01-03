@@ -33,8 +33,12 @@ def Loader(btn,path,sub,link,date,time):
                     send_assessment_mail(email,sub,link,date,time,name)
                 elif btn==2:
                     send_GD1_mail(email,sub,link,date,time,name)
-                else:
+                elif btn==3:
                     send_GD2_mail(email,sub,link,date,time,name)
+                elif btn==4:
+                    send_feedback(email,sub,link,date,time,name)
+                elif btn==5:
+                    send_technical_mail(email,sub,link,date,time,name)
         else:
             print('Ok')
 

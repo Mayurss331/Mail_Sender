@@ -29,7 +29,7 @@ def send_assessment_mail(to,sub,link,date,time,name="Candidate"):
         message = MIMEMultipart("alternative")
         assessment_link = link
         # assessment_link = "https://elementis.onlinetests.app/assess.aspx?aid=A0QLJJN6CDXH&key=gSxgXK5eBCqc9nf7"
-        logo = "https://oezszqqiubccmsdvqciz.supabase.co/storage/v1/object/sign/Elementis%20asset/logoV2%20landscape%20.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJFbGVtZW50aXMgYXNzZXQvbG9nb1YyIGxhbmRzY2FwZSAucG5nIiwiaWF0IjoxNzMzNjUyMDcwLCJleHAiOjE3NjUxODgwNzB9.NsYbrmAiQhaMuvprzvpu7cJlRfD2j-A9u_0PrEViyJ4&t=2024-12-08T10%3A01%3A13.182Z"
+        logo = "https://buikzohejfkxouarmyni.supabase.co/storage/v1/object/sign/assets/Elementis-01.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJhc3NldHMvRWxlbWVudGlzLTAxLnBuZyIsImlhdCI6MTczNTg4NzkxMiwiZXhwIjoyMTY3ODg3OTEyfQ.JonG5NOKKZkLZWT6Fmf5VusAUgFIQaNvY4t4l3KCfmY&t=2025-01-03T07%3A05%3A12.250Z"
         
         # Email subject and sender information
         message["Subject"] = sub
@@ -100,6 +100,7 @@ def send_assessment_mail(to,sub,link,date,time,name="Candidate"):
                     text-align: center;
                     margin-top: 20px;
                 }}
+                 
             </style>
         </head>
         <body>
@@ -117,11 +118,11 @@ def send_assessment_mail(to,sub,link,date,time,name="Candidate"):
                     <br><br>
                     A couple of things to keep in mind while taking the assessment:<br>
                     1. Ensure you have a stable internet connection.<br>
-                    2. Use a desktop or laptop to take the test.<br>
+                    2. Use a desktop or laptop to take the test.<br>    
                     3. Find a quiet place where you won't be interrupted.<br>
                 </p>
                 <div style="text-align: center;">
-                    <a href="{assessment_link}" class="assessment-button">Start Assessment</a>
+                    <a href="{assessment_link}" style="color:white"class="assessment-button">Start Assessment</a>
                 </div>
                 <p class="fallback-link">If the button above doesn't work, use the following link: </p> <br> 
                 <a href="{assessment_link}">{assessment_link}</a>
@@ -153,7 +154,7 @@ def send_assessment_reminder_mail(to,name="Candidate"):
         # Create a multi-part message to include both plain text and HTML content
         message = MIMEMultipart("alternative")
         assessment_link = "https://elementis.onlinetests.app/assess.aspx?aid=A0QLJJN6CDXH&key=gSxgXK5eBCqc9nf7"
-        logo = "https://oezszqqiubccmsdvqciz.supabase.co/storage/v1/object/sign/Elementis%20asset/logoV2%20landscape%20.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJFbGVtZW50aXMgYXNzZXQvbG9nb1YyIGxhbmRzY2FwZSAucG5nIiwiaWF0IjoxNzMzNjUyMDcwLCJleHAiOjE3NjUxODgwNzB9.NsYbrmAiQhaMuvprzvpu7cJlRfD2j-A9u_0PrEViyJ4&t=2024-12-08T10%3A01%3A13.182Z"
+        logo = "https://buikzohejfkxouarmyni.supabase.co/storage/v1/object/sign/assets/Elementis-01.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJhc3NldHMvRWxlbWVudGlzLTAxLnBuZyIsImlhdCI6MTczNTg4NzkxMiwiZXhwIjoyMTY3ODg3OTEyfQ.JonG5NOKKZkLZWT6Fmf5VusAUgFIQaNvY4t4l3KCfmY&t=2025-01-03T07%3A05%3A12.250Z"
         
         # Email subject and sender information
         message["Subject"] = "Elementis SoftTech Assessment Reminder Round-1 || Associate Web Developer"
@@ -226,6 +227,7 @@ def send_assessment_reminder_mail(to,name="Candidate"):
                     text-align: center;
                     margin-top: 20px;
                 }}
+                 
             </style>
         </head>
         <body>
@@ -246,7 +248,7 @@ def send_assessment_reminder_mail(to,name="Candidate"):
                     3. Find a quiet place where you won't be interrupted.<br><br>
                 </p>
                 <div style="text-align: center;">
-                    <a href="{assessment_link}" class="assessment-button">Start Assessment</a>
+                    <a href="{assessment_link}" style="color:white"class="assessment-button">Start Assessment</a>
                 </div>
                 <p class="fallback-link">If the button above doesn't work, use the following link: </p> <br> 
                 <a href="{assessment_link}">{assessment_link}</a>
@@ -278,7 +280,7 @@ def send_assessment_submission_mail(to,name="Candidate"):
         # Create a multi-part message to include both plain text and HTML content
         message = MIMEMultipart("alternative")
         assessment_link = "https://forms.gle/wWFTpkKSDNxrHHrK7"
-        logo = "https://oezszqqiubccmsdvqciz.supabase.co/storage/v1/object/sign/Elementis%20asset/logoV2%20landscape%20.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJFbGVtZW50aXMgYXNzZXQvbG9nb1YyIGxhbmRzY2FwZSAucG5nIiwiaWF0IjoxNzMzNjUyMDcwLCJleHAiOjE3NjUxODgwNzB9.NsYbrmAiQhaMuvprzvpu7cJlRfD2j-A9u_0PrEViyJ4&t=2024-12-08T10%3A01%3A13.182Z"
+        logo = "https://buikzohejfkxouarmyni.supabase.co/storage/v1/object/sign/assets/Elementis-01.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJhc3NldHMvRWxlbWVudGlzLTAxLnBuZyIsImlhdCI6MTczNTg4NzkxMiwiZXhwIjoyMTY3ODg3OTEyfQ.JonG5NOKKZkLZWT6Fmf5VusAUgFIQaNvY4t4l3KCfmY&t=2025-01-03T07%3A05%3A12.250Z"
         
         # Email subject and sender information
         message["Subject"] = "Confirmation of Assessment Submission|| Associate Web Developer"
@@ -351,6 +353,7 @@ def send_assessment_submission_mail(to,name="Candidate"):
                     text-align: center;
                     margin-top: 20px;
                 }}
+                 
             </style>
         </head>
         <body>
@@ -370,7 +373,7 @@ def send_assessment_submission_mail(to,name="Candidate"):
                     <b>If you encountered any issues we will reschedule the Test for you.You need to fill the form.</b>
                 </p>
                 <div style="text-align: center;">
-                    <a href="{assessment_link}" class="assessment-button">Feedback/Issue Form</a>
+                    <a href="{assessment_link}" style="color:white"class="assessment-button">Feedback/Issue Form</a>
                 </div>
                 
                 <div class="footer">
@@ -403,7 +406,7 @@ def send_GD1_mail(to,sub,link,date,time,name="Candidate"):
         message = MIMEMultipart("alternative")
         assessment_link = link
         # assessment_link = "meet.google.com/jpr-dibd-dtq"
-        logo = "https://oezszqqiubccmsdvqciz.supabase.co/storage/v1/object/sign/Elementis%20asset/logoV2%20landscape%20.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJFbGVtZW50aXMgYXNzZXQvbG9nb1YyIGxhbmRzY2FwZSAucG5nIiwiaWF0IjoxNzMzNjUyMDcwLCJleHAiOjE3NjUxODgwNzB9.NsYbrmAiQhaMuvprzvpu7cJlRfD2j-A9u_0PrEViyJ4&t=2024-12-08T10%3A01%3A13.182Z"
+        logo = "https://buikzohejfkxouarmyni.supabase.co/storage/v1/object/sign/assets/Elementis-01.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJhc3NldHMvRWxlbWVudGlzLTAxLnBuZyIsImlhdCI6MTczNTg4NzkxMiwiZXhwIjoyMTY3ODg3OTEyfQ.JonG5NOKKZkLZWT6Fmf5VusAUgFIQaNvY4t4l3KCfmY&t=2025-01-03T07%3A05%3A12.250Z"
         
         # Email subject and sender information
         message["Subject"] = sub
@@ -477,6 +480,7 @@ def send_GD1_mail(to,sub,link,date,time,name="Candidate"):
                     text-align: center;
                     margin-top: 20px;
                 }}
+                 
             </style>
         </head>
         <body>
@@ -533,7 +537,7 @@ def send_GD2_mail(to,sub,link,date,time,name="Candidate"):
         message = MIMEMultipart("alternative")
         assessment_link = link
         # assessment_link = "https://meet.google.com/wzp-ugsq-mqf"
-        logo = "https://oezszqqiubccmsdvqciz.supabase.co/storage/v1/object/sign/Elementis%20asset/logoV2%20landscape%20.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJFbGVtZW50aXMgYXNzZXQvbG9nb1YyIGxhbmRzY2FwZSAucG5nIiwiaWF0IjoxNzMzNjUyMDcwLCJleHAiOjE3NjUxODgwNzB9.NsYbrmAiQhaMuvprzvpu7cJlRfD2j-A9u_0PrEViyJ4&t=2024-12-08T10%3A01%3A13.182Z"
+        logo = "https://buikzohejfkxouarmyni.supabase.co/storage/v1/object/sign/assets/Elementis-01.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJhc3NldHMvRWxlbWVudGlzLTAxLnBuZyIsImlhdCI6MTczNTg4NzkxMiwiZXhwIjoyMTY3ODg3OTEyfQ.JonG5NOKKZkLZWT6Fmf5VusAUgFIQaNvY4t4l3KCfmY&t=2025-01-03T07%3A05%3A12.250Z"
         
         # Email subject and sender information
         message["Subject"] = sub
@@ -612,6 +616,7 @@ def send_GD2_mail(to,sub,link,date,time,name="Candidate"):
                     text-align: center;
                     margin-top: 20px;
                 }}
+                 
             </style>
         </head>
         <body>
@@ -666,18 +671,20 @@ def send_GD2_mail(to,sub,link,date,time,name="Candidate"):
     except Exception as e:
         print(f"Error sending email: {e}")  # Provide more detailed error information
         
+
 def send_technical_mail(to,sub,link,date,time,name="Candidate"):
+# def send_technical_mail(to,name="Candidate"):
 
     try:
         # Create a multi-part message to include both plain text and HTML content
         message = MIMEMultipart("alternative")
-        registration_link = link
+        assessment_link = link
         # assessment_link = "https://elementis.onlinetests.app/assess.aspx?aid=A0QLJJN6CDXH&key=gSxgXK5eBCqc9nf7"
-        logo = "https://oezszqqiubccmsdvqciz.supabase.co/storage/v1/object/sign/Elementis%20asset/logoV2%20landscape%20.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJFbGVtZW50aXMgYXNzZXQvbG9nb1YyIGxhbmRzY2FwZSAucG5nIiwiaWF0IjoxNzMzNjUyMDcwLCJleHAiOjE3NjUxODgwNzB9.NsYbrmAiQhaMuvprzvpu7cJlRfD2j-A9u_0PrEViyJ4&t=2024-12-08T10%3A01%3A13.182Z"
+        logo = "https://buikzohejfkxouarmyni.supabase.co/storage/v1/object/sign/assets/Elementis-01.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJhc3NldHMvRWxlbWVudGlzLTAxLnBuZyIsImlhdCI6MTczNTg4NzkxMiwiZXhwIjoyMTY3ODg3OTEyfQ.JonG5NOKKZkLZWT6Fmf5VusAUgFIQaNvY4t4l3KCfmY&t=2025-01-03T07%3A05%3A12.250Z"
         
         # Email subject and sender information
         message["Subject"] = sub
-        # message["Subject"] = "Elementis SoftTech Assessment Round-1 || Associate Web Developer"
+        # message["Subject"] = "Congratulations! Shortlisted for Technical Round || Associate Web Developer"
         message["From"] = "info.elementis@onlyformachinelearning.in"
         message["To"] = to
 
@@ -704,16 +711,17 @@ def send_technical_mail(to,sub,link,date,time,name="Candidate"):
                     text-align: center;
                     margin-bottom: 20px;
                 }}
-                .content {{
+                .instructions {{
                     font-size: 14px;
                     text-align: left;
                     margin-bottom: 20px;
                     line-height: 1.6;
                 }}
-                .registration-button {{
+                
+                .assessment-button {{
                     display: inline-block;
+                    color: #ffffff; /* Ensures the text is white */
                     background-color: #004aad;
-                    color: white; /* Ensures the text is white */
                     font-weight: bold;
                     text-decoration: none;
                     padding: 12px 20px;
@@ -725,9 +733,10 @@ def send_technical_mail(to,sub,link,date,time,name="Candidate"):
                     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
                     transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
                 }}
-                .registration-button:hover {{
+
+                .assessment-button:hover {{
                     background-color: #003580; /* Darker blue on hover */
-                    color: white; /* Ensures the text stays white on hover */
+                    color: #ffffff; /* Ensures the text stays white on hover */
                     transform: scale(1.05); /* Slight zoom effect */
                 }}
                 .fallback-link {{
@@ -742,63 +751,45 @@ def send_technical_mail(to,sub,link,date,time,name="Candidate"):
                     text-align: center;
                     margin-top: 20px;
                 }}
-                ul {{
-                    margin: 0 0 20px 20px;
-                }}
-                li {{
-                    margin-bottom: 10px;
-                }}
+                 
             </style>
         </head>
         <body>
             <div class="email-container">
                 <div class="header-logo">
-                    <img src="{logo}" width="250" alt="Elementis SoftTech Logo">
+                    <img src={logo} width="250">
                 </div>
-                <h2 style="text-align: center;">Congratulations, {name}!</h2>
-                <p class="content">
-                    Dear {name},<br><br>
-                    Thank you for participating in Elementis SoftTech’s selection process. We value your enthusiasm and interest.<br><br>
-                    To maintain a transparent and fair process, we charge a nominal fee for the technical round. This covers costs for using Coderbyte, a premium assessment platform that ensures high standards in evaluating technical skills.<br><br>
-                    Passing this fee to candidates helps us manage resources responsibly and avoid unnecessary expenses for no-shows after registration.
+                <h2 style="text-align: center;">Elementis SoftTech Assessment</h2>
+                <p class="instructions">
+                    Hi {name},<br><br>
+                    Welcome to Elementis SoftTech Campus Drive(Technical Round)<br>
+                    - This is a 120-minute Assessment.<br>
+                    - Make sure to take the assessment on your Desktop/Laptop.<br>
+                    - Mute all notifications. Any popup or antivirus notification is treated as off-tab activity. Disable all notifications before starting the test.<br>
+                    - Highly Important: Please clear browser cache and cookies before starting the test; otherwise, it can affect the test session.<br>
+                    - Ensure that your laptop time zone is set to (UTC+05:30) Chennai, Kolkata, Mumbai, New Delhi, to avoid any timezone-related issues.<br>
+                    - Any attempt to copy from the internet, copy from others, or impersonate would lead to outright rejection as all the submissions are monitored by AI.</b>.<br>
+                    <br><br>
+                    <b>A couple of things to keep in mind while taking the assessment:<br>
+                    i) This invite is valid from: {date} {time}.<br>
+                    ii) Please take the test on your desktop or laptop.<br>
+                    iii) Choose a quiet location where you will not be interrupted.<br>
+                    iv) Ensure you have a reliable internet connection before starting the test.<br></b>
                 </p>
-                <p class="content">
-                    Here’s what this step ensures for all candidates:
-                    <ul>
-                        <li><b>Fair Opportunity:</b> By conducting an advanced technical evaluation, we aim to shortlist candidates who meet the technical standards we require for our projects.</li>
-                        <li><b>Transparency:</b> The fee charged is entirely directed towards covering the costs associated with your assessment.</li>
-                        <li><b>Career Development:</b> Every participant in this process, regardless of the outcome, will have an opportunity to gain valuable experience.</li>
-                    </ul>
-                </p>
-                <p class="content">
-                    After the technical round:<br>
-                    <ul>
-                        <li><b>Qualified Candidates:</b> Those who qualify will join as stipend interns (₹5000/month). Outstanding performers will also be eligible for a Pre-Placement Offer (PPO) with a starting salary of ₹4–6 LPA.</li>
-                        <li><b>Candidates Who Couldn’t Qualify:</b> We believe learning is a journey. To support this, we will offer an unpaid internship where you can gain hands-on experience and earn a certificate of completion. This certificate will serve as a valuable addition to your résumé, reflecting relevant industry exposure.</li>
-                    </ul>
-                </p>
-                <p class="content">
-                    To proceed further, please register for the Technical Round using the link below. After registration, you will receive the date and time slot for your technical round.
-                </p>
+                <br>You can start the assessment by clicking here:</b>
                 <div style="text-align: center;">
-                    <a href="{registration_link}" class="registration-button">Register</a>
+                    <a href="{assessment_link}" style="color:white"class="assessment-button">Start Assessment</a>
                 </div>
-                <p class="fallback-link">If the button above doesn't work, use the following link:</p>
-                <p style="word-wrap: break-word; text-align: center;"><a href="{registration_link}">{registration_link}</a></p>
+                <p class="fallback-link">If the button above doesn't work, use the following link: </p> <br> 
+                <a href="{assessment_link}">{assessment_link}</a>
                 <div class="footer">
                     Best regards,<br>
-                    Elementis SoftTech
+                    Team Elementis SoftTech
                 </div>
             </div>
         </body>
         </html>
         """
-
-
-        with open(r"Technical Round.pdf", 'rb') as f:
-            pdf_attachment = MIMEApplication(f.read(), _subtype='pdf')
-            pdf_attachment.add_header('Content-Disposition', 'attachment', filename='CompanyProfile.pdf')
-            message.attach(pdf_attachment)
 
         content = MIMEText(html_content, "html")
         message.attach(content)
@@ -812,9 +803,10 @@ def send_technical_mail(to,sub,link,date,time,name="Candidate"):
         print(f"Error sending email: {e}")  # Provide more detailed error information
 
 
-# send_technical_mail("prasaddhaneshwar09@gmail.com","Subject","https://rzp.io/rzp/dfghj",'','','Dhaneshwar')
-# send_technical_mail("tejas9patil@gmail.com","Subject","https://rzp.io/rzp/dfghj",'','','Tejas')
-# send_technical_mail("mayursonar791@gmail.com","Subject","https://rzp.io/rzp/dfghj",'','','Mayur')
-# send_GD2_mail("tejas9patil@gmail.com","Tejas Patil")
-# send_GD2_mail("mayursonar791@gmail.com","Mayur Sonar")
-# send_GD2_mail("prasaddhaneshwar09@gmail.com","Dhaneshwar Prasad")
+
+def send_feedback(email,sub,link,date,time,name="Candidate"):
+    print("HEllo")
+
+# send_technical_mail("tejas9patil@gmail.com","Tejas Patil")
+# send_technical_mail("mayursonar791@gmail.com","Mayur Sonar")
+# send_technical_mail("prasaddhaneshwar09@gmail.com","Dhaneshwar Prasad")
