@@ -515,7 +515,7 @@ def send_GD1_mail(to,role='',sub='',link='',date='',time='',name="Candidate"):
                     <br>
                     Here are the details for the Group Discussion:<br>
                     <b>Date: {date}<br>
-                    Time: {time}<br>
+                    Time: From {time}<br>
                     Venue: Google Meet
                     </b>
                     <br><br>
